@@ -17,12 +17,9 @@ local_css("styles.css")
 st.markdown('<link rel="stylesheet" type="text/css" href="styles.css">',
             unsafe_allow_html=True)
 
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
+
 
 # Load Assets
-lottie_buisness = load_lottiefile("/Users/ujjwalnd/Python_Projects/picture.json")
 img_Self_Picture = Image.open("/ujjwal1.png")
 
 
@@ -43,11 +40,9 @@ with st.container():
         st.header(Stock or "AAPL")
     
 with right_column:
-    st_lottie(
-    lottie_buisness,
-    height=500
+    st.header("to be determined")
    
-)
+
 
 
 # --- Actual Project ---
