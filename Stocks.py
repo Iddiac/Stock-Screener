@@ -20,7 +20,7 @@ st.markdown('<link rel="stylesheet" type="text/css" href="styles.css">',
 
 
 # Load Assets
-img_Self_Picture = Image.open("/ujjwal1.png")
+
 
 
 # --- Header ---
@@ -59,10 +59,7 @@ with right_column:
 
 
 with st.container():
-    image_column, text_column = st.columns((1,2))
-    with image_column:
-        st.image(img_Self_Picture)
-    with text_column:
+   
         st.subheader("About My Journey")
         st.write(
             """
