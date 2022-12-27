@@ -22,7 +22,7 @@ def load_lottiefile(filepath: str):
         return json.load(f)
 
 # Load Assets
-lottie_buisness = load_lottiefile("/Users/ujjwalnd/Python_Projects/Animations/business-analysis.json")
+lottie_buisness = load_lottiefile("/Users/ujjwalnd/Python_Projects/Animations/picture.json")
 img_Self_Picture = Image.open("images/ujjwal1.png")
 
 
@@ -98,4 +98,4 @@ with st.container():
         st.empty()
 
 
-    # comment so it loads
+    # comment so it
