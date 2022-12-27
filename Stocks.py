@@ -22,8 +22,8 @@ def load_lottiefile(filepath: str):
         return json.load(f)
 
 # Load Assets
-lottie_buisness = load_lottiefile("/Users/ujjwalnd/Python_Projects/Animations/picture.json")
-img_Self_Picture = Image.open("images/ujjwal1.png")
+lottie_buisness = load_lottiefile("/Users/ujjwalnd/Python_Projects/picture.json")
+img_Self_Picture = Image.open("/ujjwal1.png")
 
 
 # --- Header ---
