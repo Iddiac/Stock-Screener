@@ -17,9 +17,14 @@ local_css("styles.css")
 st.markdown('<link rel="stylesheet" type="text/css" href="styles.css">',
             unsafe_allow_html=True)
 
-
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
 # Load Assets
+lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_M9p23l.json")
 
 
 
@@ -40,9 +45,11 @@ with st.container():
         st.header(Stock or "AAPL")
     
 with right_column:
-    st.header("to be determined")
+    st_lottie(
+    lottie_hello,
+    height=500
    
-
+)
 
 
 # --- Actual Project ---
@@ -59,7 +66,10 @@ with right_column:
 
 
 with st.container():
-   
+    image_column, text_column = st.columns((1,2))
+    with image_column:
+       st.empty()
+    with text_column:
         st.subheader("About My Journey")
         st.write(
             """
