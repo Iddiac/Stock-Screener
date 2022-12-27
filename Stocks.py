@@ -92,7 +92,7 @@ with st.container():
     <input type="hidden" name="_captcha" value="false">
      <input type="text" name="name" placeholder="Your Name" required>
      <input type="email" name="email" placeholder= "Your Email" required>
-     <textarea type="text" name="message" placeholder="Your message here!"  required> </textarea>
+     <textarea type="text" name="Message" placeholder="Your message here!"  required> </textarea>
      <button type="submit">Send</button>
     </form>
     """
