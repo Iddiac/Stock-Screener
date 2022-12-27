@@ -25,6 +25,9 @@ def load_lottieurl(url: str):
 
 # Load Assets
 lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_M9p23l.json")
+image = "https://media.licdn.com/dms/image/C5603AQGaD256jfoP7w/profile-displayphoto-shrink_800_800/0/1651877185940?e=1677715200&v=beta&t=La_yb77ZOkayHklRzbfZPagftatCxn1FFkIyQDUxEkI"
+
+
 
 
 
@@ -68,7 +71,7 @@ with right_column:
 with st.container():
     image_column, text_column = st.columns((1,2))
     with image_column:
-       st.empty()
+       st.image(image, width=250)
     with text_column:
         st.subheader("About My Journey")
         st.write(
